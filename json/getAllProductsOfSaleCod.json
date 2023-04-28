@@ -1,0 +1,29 @@
+[{
+    "nrocomp": "3",
+    "tipo": "p",
+    "cod": "2389",
+    "piezas": "1",
+    "precio": "340.69",
+    "importe": "340.690",
+    "monto_descuento_item": "0.00",
+    "mod_pre": "0",
+    "tipitem": "producto",
+    "tipboni": "",
+    "pesopres": "",
+    "denom": "ADAPTADOR 1PLUG H / 2PLUG M 15CM NETMAK C50 ",
+    "url": "2389.jpg"
+}, {
+    "nrocomp": "3",
+    "tipo": "p",
+    "cod": "2550",
+    "piezas": "2",
+    "precio": "1186.73",
+    "importe": "2373.461",
+    "monto_descuento_item": "0.00",
+    "mod_pre": "6",
+    "tipitem": "producto",
+    "tipboni": "P",
+    "pesopres": "",
+    "denom": "ADAPTADOR BT P/NB/PC 4.0 TP-LINK UB400 ",
+    "url": "2550.jpg"
+}]

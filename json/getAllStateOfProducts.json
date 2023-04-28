@@ -1,0 +1,31 @@
+[{
+    "id_estado": "1",
+    "descripcion": "NUEVO",
+    "descrip": "Al darse de alta un nuevo producto autom\\xe1ticamente inicia con este estado. Tambi\\xe9n puede setearlo en alg\\xfan momento en especial.",
+    "cantidad": "21"
+}, {
+    "id_estado": "2",
+    "descripcion": "OFERTA",
+    "descrip": "Posee un porcentaje o un monto fijo de descuento.",
+    "cantidad": "5"
+}, {
+    "id_estado": "3",
+    "descripcion": "LLEGA PRONTO",
+    "descrip": "Producto que a\\xfan no se encuentra en stock pero que estar\\xe1 disponible en los pr\\xf3ximos d\\xedas/semanas.",
+    "cantidad": "0"
+}, {
+    "id_estado": "4",
+    "descripcion": "SIN ESTADO",
+    "descrip": "Producto sin estado.",
+    "cantidad": "669"
+}, {
+    "id_estado": "5",
+    "descripcion": "OUTLET",
+    "descrip": "Productos fuera de temporada o con descuento especial.",
+    "cantidad": "1"
+}, {
+    "id_estado": "6",
+    "descripcion": "DESACTIVADO",
+    "descrip": "Productos que no se deben mostrar en el carrito de compras. No se eliminan, pero no est\\xe1n disponibles desde el carrito.",
+    "cantidad": "0"
+}]
