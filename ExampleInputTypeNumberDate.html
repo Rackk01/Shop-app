@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input id="id" data-format="00/00/00" type="text" placeholder="MM-DD-YY">
+    <h6 id="idTexto"></h6>
+
+    <script>
+        const inputText = document.getElementById('id');
+        const h6 = document.getElementById('idTexto');
+
+        inputText.addEventListener('input', updateValue);
+
+        function updateValue() {
+            generateDate(inputText.value.trim(), h6);
+        }
+
+        function contarCantidadUnCracter(str, char) {
+            let indices = [];
+            for (let i = 0; i < str.length; i++) {
+                if (str[i].toLowerCase() === char) indices.push(i);
+            }
+            return indices.length;
+        }
+
+        function arrayDate(str) {
+            let newStr = []; // let newStr = ['2', '9', '/', '0', '9', '/', '2', '2'];
+            // dd / mm / yy
+
+            let string = str.replace('/', '');
+            string = string.replace('/', '');
+            string = string.replace('/', '');
+            string = string.replace('/', '');
+            string = string.replace('/', '');
+            string = string.replace('/', '');
+            string = string.replace('/', '');
+            string = string.replace('/', '');
+            string = string.replace('/', '');
+            string = string.replace('/', '');
+            string = string.replace('/', '');
+            string = string.replace('/', '');
+            console.log(string);
+
+            for (let i = 0; i < string.length; i++) {
+                newStr.push(string[i]);
+
+                if (string.length == 2) {
+                    console.log('es 2')
+                    // newStr.push('/');
+                } else if (string.length == 3) {
+                    console.log('es 3')
+                    // newStr.push('/');
+                }
+            }
+
+            newStr = newStr.toString().replace(',', '');
+            newStr = newStr.toString().replace(',', '');
+            newStr = newStr.toString().replace(',', '');
+            newStr = newStr.toString().replace(',', '');
+            newStr = newStr.toString().replace(',', '');
+            newStr = newStr.toString().replace(',', '');
+            newStr = newStr.toString().replace(',', '');
+            newStr = newStr.toString().replace(',', '');
+            newStr = newStr.toString().replace(',', '');
+            newStr = newStr.toString().replace(',', '');
+            newStr = newStr.toString().replace(',', '');
+            newStr = newStr.toString().replace(',', '');
+            newStr = newStr.toString().replace(',', '');
+            newStr = newStr.toString().replace(',', '');
+            newStr = newStr.toString().replace(',', '');
+            newStr = newStr.toString().replace(',', '');
+            return newStr;
+        }
+
+        function generateDate(strAc, lbl) {
+            let str = strAc.replaceAll('/', '');
+
+            let yearDate = new Date().getFullYear()
+                .toString(); // getFullYear() retorna un número, para poder usar slice() necesitamos convertirlo a un string utilizando toString()
+            let currentYear = parseInt(yearDate.slice(-2));
+            // console.log(yearActual);
+
+            let newString = '';
+
+            if (str.slice(0, 2).length > 1 && str.slice(0, 2).length < 3) {
+                newString += str.slice(0, 2) + '/';
+            }
+            if (str.slice(2, 4).length > 1 && str.slice(2, 4).length < 3) {
+                newString += str.slice(2, 4) + '/';
+            }
+            if (str.slice(4, 8).length > 3 && str.slice(4, 8).length < 5) {
+                newString += str.slice(4, 8);
+            } else if (str.slice(4, 6).length > 1 && str.slice(4, 6).length < 3) {
+
+                let intYearTwoDig = parseInt(str.slice(4, 6));
+                console.log('intYearTwoDig ' + typeof (intYearTwoDig));
+                console.log('currentYear ' + typeof (currentYear));
+
+                currentYear += 5;
+                console.log('currentYear ' + currentYear);
+
+                if (currentYear < intYearTwoDig) {
+                    newString += '19' + str.slice(4, 6);
+                } else {
+                    newString += '20' + str.slice(4, 6);
+                }
+            }
+
+            lbl.innerHTML = newString;
+            console.log(validarFormatoFecha(newString));
+        }
+
+        function validarFormatoFecha(campo) {
+            var RegExPattern = /^\d{1,2}\/\d{1,2}\/\d{2,4}$/;
+            if ((campo.match(RegExPattern)) && (campo != '')) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>
