@@ -1,0 +1,145 @@
+/* Estilo del texto que se ubica en el index parte superior de todo */
+.txt-info-sup {
+  color: IndianRed;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: "Quicksand", sans-serif;
+  display: block;
+  line-height: 1;
+}
+
+/* Estilización de la página activa del datatable */
+.page-item.active .page-link {
+  background-color: #60A3D9;
+  border-color: #60A3D9;
+}
+
+.bg-danger-pastel {
+  background: #ff7675 !important;
+}
+
+.text-danger-pastel {
+  color: #ff7675 !important;
+}
+
+.badge-registrado{
+  background: #74b9ff !important;
+}
+.badge-preparado{
+  background: #fdcb6e !important;
+}
+.badge-enviado{
+  background: #6c5ce7 !important;
+}
+.badge-entregado{
+  background: #00b894 !important;
+}
+.badge-vencido{
+  background: #636e72 !important;
+}
+.badge-cancelado{
+  background: #ff7675 !important;
+}
+
+.badge-light-registrado{
+  color: #74b9ff !important;
+  background: #74baff2f !important;
+}
+.badge-light-preparado{
+  color: #fdcb6e !important;
+  background: #fdcb6e2f !important;
+}
+.badge-light-enviado{
+  color: #6c5ce7 !important;
+  background: #6c5ce72f !important;
+}
+.badge-light-entregado{
+  color: #00b894 !important;
+  background: #00b8942f !important;
+}
+.badge-light-vencido{
+  color: #636e72 !important;
+  background: #636e722f !important;
+}
+.badge-light-cancelado{
+  color: #ff7675 !important;
+  background: #ff76752f !important;
+}
+
+
+.badge-salmon{
+  background-color: salmon;
+}
+.badge-light-salmon{
+  color: salmon;
+  background-color: #FA80722f;
+}
+
+.badge-darkred{
+  background-color: DarkRed;
+}
+.badge-light-darkred{
+  color: DarkRed;
+  background-color: #8B00002f;
+}
+
+.badge-coral{
+  background-color: Coral;
+}
+.badge-light-coral{
+  color: Coral;
+  background-color: #FF7F502f;
+}
+
+.badge-orange{
+  background-color: Orange;
+}
+.badge-light-orange{
+  color: Orange;
+  background-color: #FFA5002f;
+}
+
+.badge-orchid{
+  background-color: Orchid;
+}
+.badge-light-orchid{
+  color: Orchid;
+  background-color: #DA70D62f;
+}
+
+.badge-mediumpurple{
+  background-color: MediumPurple;
+}
+.badge-light-mediumpurple{
+  color: MediumPurple;
+  background-color: #9370DB2f;
+}
+
+.badge-limegreen{
+  background-color: limegreen;
+}
+.badge-light-limegreen{
+  color: limegreen;
+  background-color: #32CD322f;
+}
+.badge-green{
+  background-color: green;
+}
+.badge-light-green{
+  color: green;
+  background-color: #0080002f;
+}
+.badge-turquoise{
+  background-color: DarkTurquoise;
+}
+.badge-light-turquoise{
+  color: DarkTurquoise;
+  background-color: #00CED12f;
+}
+.badge-grey{
+  background-color: gray;
+}
+.badge-light-grey{
+  color: gray;
+  background-color: #8080802f;
+}
